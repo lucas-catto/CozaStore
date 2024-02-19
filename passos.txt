@@ -1,0 +1,3 @@
+
+Criar o Projeto
+dotnet new mvc -o CozaStore
