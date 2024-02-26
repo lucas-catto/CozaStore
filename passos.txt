@@ -1,3 +1,11 @@
 
 Criar o Projeto
 dotnet new mvc -o CozaStore
+
+Ctrl + Shift + P
+Nuget
+=> Pesquisar e Instalar
+    - AspNetCore.Identity.EntityFrameworkCore
+    - EntityFrameworkCore
+    - EntityFrameworkCore.Design
+    - EntityFrameworkCore.InMemory
