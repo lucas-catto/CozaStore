@@ -29,4 +29,6 @@ public class Categoria {
 
     [ForeignKey("CategoriaPaiId")]    
     public Categoria CategoriaPai { get; set; } // Propriedade de Navegação
+
+    public ICollection<Produto> Produtos { get; set; }
 }
