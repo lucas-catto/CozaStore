@@ -9,3 +9,24 @@ Nuget
     - EntityFrameworkCore
     - EntityFrameworkCore.Design
     - EntityFrameworkCore.InMemory
+
+Instalar Ferramenta de Geração de Código
+=> dotnet tool install -g dotnet-aspnet-codegenerator --version 8.0.1
+
+Gerar Controller e Views de CRUD
+=> dotnet-aspnet-codegenerator controller -name CoresController -m Cor -dc AppDbContext -udl --relativeFolderPath Controllers
+-----------------------------------------
+| -m                   => model         |
+| -dc                  => datacontext   |
+| -udl                 => layout padrão |
+| --relativeFolderPath => onde salva    |
+-----------------------------------------
+
+Ctrl + shif + p
+Instalar
+    => Microsoft.VisualStudio.Web.CodeGeneration.Design
+    => Microsoft.EntityFrameworkCore.Tools
+    => Microsoft.EntityFrameworkCore.SqlServer
+
+=> dotnet-aspnet-codegenerator controller -name TamanhosController -m Tamanho -dc AppDbContext -udl --relativeFolderPath Controllers
+=> dotnet-aspnet-codegenerator controller -name CategoriasController -m Categoria -dc AppDbContext -udl --relativeFolderPath Controllers
